@@ -1,0 +1,14 @@
+{
+  "name": "nodejsAPI01",
+  "version": "1.0.0",
+  "description": "Aprendendo a desenvolver e trabalhar com uma API Express do node",
+  "main": "index.js",
+  "repository": "https://github.com/izaacMBD/nodejsAPI01.git",
+  "author": "Izaacmbd",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}
