@@ -9,7 +9,7 @@ async function createUser(name, email, password, typeUser) {
 
 async function updateUser(name, email, password, typeUser, idUser) {
     const conn = await database.connectDB();
-    conn.query("UPDATE tbl_usuario SET nome = ?, email = ?, senha = ?, tipo_usuario = ? WHERE idUser = ?", 
+    conn.query("UPDATE tbl_usuario SET nome = ?, email = ?, senha = ?, tipo_usuario = ? WHERE id_usuario = ?", 
     [name, email, password, typeUser, idUser]);
     conn.end();
 }

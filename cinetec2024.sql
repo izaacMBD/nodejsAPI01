@@ -11,6 +11,8 @@ CREATE TABLE tbl_diretor (
     deletado boolean default false
 );
 
+select * from tbl_diretor;
+
 CREATE TABLE tbl_genero(
 	id_genero int primary key auto_increment,
     genero varchar(45) not null,
@@ -50,7 +52,7 @@ CREATE TABLE tbl_usuario(
     nome varchar(45) not null,
     email varchar(45) not null,
     senha varchar(45) not null,
-    tipo_usuario enum('admnistrador', 'comum') not null default 'comum',
+    tipo_usuario enum('administrador', 'comum') not null default 'comum',
     criado_em datetime default now(),
     deletado boolean default false
 );

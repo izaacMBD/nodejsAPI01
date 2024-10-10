@@ -16,8 +16,17 @@ route.post("/", async (request, response) => {
     
     await service.addDiretor(nomeDiretor, nacionalidade, dtNascimento, sexo);
 
-    return response.status(201).send({'message': "Usuario cadastrado com sucesso!!! 😎"})
+    return response.status(201).send({'message': "Diretor cadastrado com sucesso!!! 😎"})
 
+});
+
+route.put("/:idDiretor", async (request, response) => { //: siginifica que haverá uma váriavel que quero utilizar
+    const {nomeDiretor, nacionalidade, dtNascimento, sexo} = request.body; //atributos da tbls
+    const {idDiretor} = request.params; //parâmetro, com base na 
+
+    await service.updateDiretor(nomeDiretor, nacionalidade, dtNascimento, sexo, idDiretor);
+
+    return response.status(201).send({'message': "Diretor atualizado com sucesso!!! 😎"})
 });
 
 export default route;
