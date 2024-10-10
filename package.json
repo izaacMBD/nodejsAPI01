@@ -8,7 +8,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "baixar": "npm install -g nodemon && nodemon src/index.js"
+    "baixar": "npm install -g nodemon && nodemon src/index.js",
+    "upload": "git add . && git config --global user.email "izaacMB202825@proton.me" && git config --global user.name "izaacMBD" && git commit -m "Upload" && git push origin main
   },
   "dependencies": {
     "express": "^4.19.2",
