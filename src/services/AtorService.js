@@ -9,7 +9,7 @@ async function addAtor(nomeAtor, sexo, dtNascimento) {
 
 async function updateAtor(nomeAtor, sexo, dtNascimento, idAtor) {
     const conn = await database.connectDB();
-    conn.query("UPDATE tbl_diretor SET nome_ator = ?, sexo = ?, dt_nascimento = ? WHERE id_ator = ?", 
+    conn.query("UPDATE tbl_ator SET nome_ator = ?, sexo = ?, dt_nascimento = ? WHERE id_ator = ?", 
     [nomeAtor, sexo, dtNascimento, idAtor]);
     conn.end();
 }

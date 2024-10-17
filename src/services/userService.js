@@ -14,4 +14,12 @@ async function updateUser(name, email, password, typeUser, idUser) {
     conn.end();
 }
 
-export default {createUser, updateUser};
+async function listUser() {
+    const sql = "SELECT * FROM tbl_usuario";
+    const conn = await database.connectDB;
+    const {rows} = await conn.query(sql);
+    conn.end();
+    return rows;
+}
+
+export default {createUser, updateUser, listUser};
