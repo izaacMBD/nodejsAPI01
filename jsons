@@ -1,0 +1,27 @@
+Ator:
+    {
+	"nomeAtor":"Izaac",
+	"sexo":"M",
+	"dtNascimento":"2006/03/08"
+    }
+
+Diretor:
+    {
+	"nomeDiretor":"Izaac",
+	"nacionalidade":"Brasil",
+	"dtNascimento":"2006/03/08",
+    "sexo":"M"
+    }
+
+Genero:
+    {
+	"genre":"Terror"
+    }
+
+Usuário:
+    {
+	"name":"Izaac",
+	"email":"izaac@Brasil.com",
+	"password":"senhasenha",
+    "typeUser":"administrador"
+    }
